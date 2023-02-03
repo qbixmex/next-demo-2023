@@ -15,8 +15,13 @@ body {
 }
 
 a {
-  color: inherit;
+  color: var(--blue);
   text-decoration: none;
+}
+
+a:hover {
+  color: var(--dark-blue);
+  text-decoration: underline;
 }
 
 * {
