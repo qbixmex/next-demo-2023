@@ -1,5 +1,6 @@
 import Head from "next/head";
 import Image from "next/image";
+import Link from "next/link";
 import styles from "../styles/Home.module.css";
 
 export default function Home() {
@@ -14,14 +15,10 @@ export default function Home() {
 
       <main className={styles.main}>
         <h1 className={styles.title}>
-          Bienvenido a <a href="https://nextjs.org">Next.js!</a>
+          Home <span className="blue">Page</span>
         </h1>
         <p className={styles.description}>
-          Para comenzar edite
-          <code className={styles.code}>pages/index.js</code><br />
-        </p>
-        <p className={styles.description}>
-          <span>Ir a <a href="http://localhost:3000/about">About page</a></span>
+          Ir a <Link href="/about">About page</Link>
         </p>
       </main>
 
@@ -34,6 +31,7 @@ export default function Home() {
           Patrocinado por
           <span className={styles.logo}>
             <Image
+              id="logo"
               className={styles["logo-image"]}
               src="/vercel.svg"
               alt="Vercel Logo"

@@ -27,3 +27,6 @@ a:hover {
 * {
   box-sizing: border-box;
 }
+
+.blue { color: var(--blue); }
+.dark-blue { color: var(--dark-blue); }
