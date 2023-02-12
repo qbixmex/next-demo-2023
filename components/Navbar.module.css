@@ -6,6 +6,5 @@
   height: 50px;
 }
 
-.menu a {
-  font-size: 18px;
-}
+.menu-container a { font-size: 18px }
+.active { color: #ccc }
