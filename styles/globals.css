@@ -14,6 +14,18 @@ body {
   color: #fff;
 }
 
+.navigation {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  align-items: center;
+  height: 50px;
+}
+
+.navigation a {
+  font-size: 18px;
+}
+
 a {
   color: var(--blue);
   text-decoration: none;
