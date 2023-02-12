@@ -8,7 +8,7 @@ type Props = {
   href: string;
 };
 
-export const ActiveLink = ({ text, href }: Props): JSX.Element => {
+export function ActiveLink({ text, href }: Props) {
   const { asPath } = useRouter();
 
   return (
@@ -16,4 +16,4 @@ export const ActiveLink = ({ text, href }: Props): JSX.Element => {
       <a className={ asPath === href ? style.active : null }>{ text }</a>
     </Link>
   );
-};
+}
