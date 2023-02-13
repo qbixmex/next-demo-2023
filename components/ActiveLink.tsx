@@ -1,7 +1,10 @@
-import Link from 'next/link';
+import { CSSProperties } from 'react';
 import { useRouter } from 'next/router';
+import Link from 'next/link';
 
-import style from './Navbar.module.css';
+const active: CSSProperties = {
+  color: '#fff',
+};
 
 type Props = {
   text: string;
@@ -13,7 +16,7 @@ export function ActiveLink({ text, href }: Props) {
 
   return (
     <Link href={ href }>
-      <a className={ asPath === href ? style.active : null }>{ text }</a>
+      <a style={ (asPath === href) ? active : undefined }>{ text }</a>
     </Link>
   );
 }

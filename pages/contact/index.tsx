@@ -15,7 +15,7 @@ export const Contact: NextPageWithLayout = () => {
   );
 };
 
-Contact.getLayout = function getLayout(page: ReactElement) {
+const getLayout = (page: ReactElement) => {
   return (
     <MainLayout>
       <LightLayout>
@@ -23,6 +23,8 @@ Contact.getLayout = function getLayout(page: ReactElement) {
       </LightLayout>
     </MainLayout>
   );
-}
+};
+
+Contact.getLayout = getLayout;
 
 export default Contact;

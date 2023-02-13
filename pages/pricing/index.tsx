@@ -1,7 +1,7 @@
 import { MainLayout } from '../../components/layouts/MainLayout';
 import styles from './Pricing.module.css';
 
-export default function Pricing() {
+const Pricing = () => {
   return (
     <MainLayout>
       <h1 className="title">
@@ -35,4 +35,6 @@ export default function Pricing() {
       </table>
     </MainLayout>
   );
-}
+};
+
+export default Pricing;
