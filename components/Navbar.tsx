@@ -1,4 +1,3 @@
-import Link from 'next/link';
 import { ActiveLink } from './ActiveLink';
 import style from './Navbar.module.css';
 
@@ -15,12 +14,10 @@ const menuItems: Item[] = [
   { id: 4, text: 'Pricing', href: '/pricing' },
 ];
 
-export function Navbar() {
-  return (
-    <nav className={ style['menu-container'] }>
-      { menuItems.map(({ id, text, href }) => (
-        <ActiveLink key={ id } text={ text } href={ href } />
-      )) }
-    </nav>
-  );
-}
+export const Navbar = () => (
+  <nav className={ style['menu-container'] }>
+    { menuItems.map(({ id, text, href }) => (
+      <ActiveLink key={ id } text={ text } href={ href } />
+    )) }
+  </nav>
+);

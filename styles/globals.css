@@ -45,12 +45,10 @@ a:hover {
   font-size: 3rem;
 }
 
-.title,
-.description {
-  text-align: center;
-}
+.title { text-align: center }
 
 .description {
+  text-align: justify;
   margin: 4rem 0;
   line-height: 1.5;
   font-size: 1.5rem;

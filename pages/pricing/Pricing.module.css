@@ -1,0 +1,27 @@
+.pricing {
+  margin: 20px auto 0 auto;
+  text-align: left;
+  width: 400px;
+  border-collapse: collapse;
+}
+
+.pricing thead {
+  background-color: #222;
+}
+
+.pricing thead th {
+  border-bottom: solid 2px #fff;
+}
+
+.pricing thead th,
+.pricing tbody td {
+  padding: 15px;
+}
+
+.pricing tbody tr:nth-child(even) {
+  background-color: #555;
+}
+
+.pricing tbody tr:nth-child(odd) {
+  background-color: #333;
+}

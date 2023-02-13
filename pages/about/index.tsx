@@ -6,7 +6,7 @@ export default function About() {
       <h1 className="title">
         About <span className="blue">Page</span>
       </h1>
-      <p className="description">About Text</p>
+      <p className="description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dicta impedit facere commodi distinctio illum deserunt, doloribus alias aperiam mollitia harum illo blanditiis ex incidunt. Saepe.</p>
     </MainLayout>
   );
 }
