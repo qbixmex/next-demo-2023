@@ -41,3 +41,9 @@ npm run lint
 # yarn
 yarn lint
 ```
+
+## Create Docker Image
+
+```bash
+docker build -t nextjs-initial .
+```
