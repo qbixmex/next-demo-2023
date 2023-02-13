@@ -47,3 +47,11 @@ yarn lint
 ```bash
 docker build -t nextjs-initial .
 ```
+
+## Run Docker Image
+
+```bash
+docker run --name=next-app -p 3000:3000 nextjs-initial
+# or use local port "80"
+docker run --name=next-app -p 80:3000 nextjs-initial
+```
